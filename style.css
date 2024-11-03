@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.mainheading {
+  padding-top: 15%;
+  font-size: 9vh;
+  font-weight: 600;
+  color: rgb(53, 171, 198);
+  text-align: center;
+}
+
+.row.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%;
+  padding-top: 4vh;
+  padding-bottom: 5vh;
+  width: 80%;
+}
+.addTask {
+  background-color: rgb(53, 171, 198);
+  color: white;
+  padding: 1.8%;
+  font-family: system-ui;
+  font-weight: 600;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 3vh;
+  cursor: pointer;
+  box-shadow: none;
+}
+.bigcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.field {
+  padding: 10px;
+  border: 1px solid rgb(53, 171, 198);
+  border-radius: 4px;
+  width: 30%;
+  font-family: cursive;
+  font-size: 3vh;
+}
+.field:focus {
+  background-color: rgba(240, 79, 199, 0.6);
+  outline: 0; /* убирает border при фокусе, border:none не сработал */
+  outline-offset: 0;
+}
+
+li {
+  color: rgb(240, 79, 199);
+  font-family: cursive;
+  font-size: 4.5vh;
+  font-weight: 800;
+}
+
+.del {
+  text-decoration: line-through;
+  text-decoration-color: rgb(7, 106, 171);
+  color: rgb(240, 79, 199 0.8); /* сделали текст полупрозрачным */
+  list-style-type: none;
+}
